@@ -1,0 +1,12 @@
+.git
+.github
+node_modules
+.dockerignore
+.gitattributes
+.gitignore
+Dockerfile
+postcss.config.js
+README.md
+screenshot.png
+.env.sample
+dist

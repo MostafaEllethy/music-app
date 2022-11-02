@@ -1,0 +1,11 @@
+version: "3"
+services:
+  valorant-clone:
+    container_name: music-app
+    build: .
+    network_mode: bridge
+    ports:
+      - "3000:80"
+    environment:
+      - VIRTUAL_HOST=music-app.mostafaellethy.com
+      - LETSENCRYPT_HOST=music-app.mostafaellethy.com
