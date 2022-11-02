@@ -1,6 +1,6 @@
 version: "3"
 services:
-  valorant-clone:
+  music-app:
     container_name: music-app
     build: .
     network_mode: bridge
