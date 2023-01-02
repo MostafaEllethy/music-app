@@ -31,15 +31,17 @@ export default memo(function TopArtistsSwiper({
             key={i}
             className="!w-1/4 sm:!w-32 shadow-lg rounded-full animate-slideright mb-7"
           >
-            <Link to={`/artists/${o?.artists[0]?.adamid}`}>
-              {
-                <img
-                  src={o?.images.background}
-                  alt={o?.artists[0]?.adamid}
-                  className="rounded-full w-full object-cover"
-                />
-              }
-            </Link>
+            {o.artists && (
+              <Link to={`/artists/${o.artists[0]?.adamid}`}>
+                {
+                  <img
+                    src={o?.images.background}
+                    alt={o?.artists?.[0]?.adamid}
+                    className="rounded-full w-full object-cover"
+                  />
+                }
+              </Link>
+            )}
           </SwiperSlide>
         ))}
       </Swiper>

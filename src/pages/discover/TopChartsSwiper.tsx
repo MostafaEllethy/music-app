@@ -90,12 +90,14 @@ export default memo(function TopChartsSwiper({
               >
                 {o?.title}
               </Link>
-              <Link
-                to={`/artists/${o?.artists[0]?.adamid}`}
-                className="text-[13px] truncate base-300 opacity-80 font-medium"
-              >
-                {o?.subtitle}
-              </Link>
+              {o.artists && (
+                <Link
+                  to={`/artists/${o.artists[0]?.adamid}`}
+                  className="text-[13px] truncate base-300 opacity-80 font-medium"
+                >
+                  {o?.subtitle}
+                </Link>
+              )}
             </div>
           </SwiperSlide>
         ))}

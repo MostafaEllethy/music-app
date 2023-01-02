@@ -32,7 +32,7 @@ export default memo(function DetailsHeader({
         >
           {artist ? artist?.name : song?.title}
         </h1>
-        {song && (
+        {song?.artists && (
           <Link to={`/artists/${song?.artists[0]?.adamid}`}>
             <h2 className="font-medium truncate text-sm sm:text-base">
               {song.subtitle}

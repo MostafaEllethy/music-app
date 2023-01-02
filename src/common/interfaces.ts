@@ -6,7 +6,7 @@ export interface SearchResponse {
 export type Song = ArtistSong | Track;
 
 export interface Track {
-  artists: Artist[];
+  artists?: Artist[];
   images: Images;
   subtitle: string;
   title: string;
