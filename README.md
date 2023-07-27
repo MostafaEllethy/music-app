@@ -8,7 +8,7 @@ Cloud Music Player using React, Redux Toolkit, and Tailwind CSS
 
 ## 🎉 Live Site
 
-[View Live](https://music-app.mostafaellethy.com/)
+[View Live](https://music-app-tan-nine.vercel.app/)
 
 &nbsp;
 
